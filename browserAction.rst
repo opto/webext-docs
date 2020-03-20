@@ -72,7 +72,7 @@ Sets the icon for the toolbar action. The icon can be specified either as the pa
 setPopup(details)
 -----------------
 
-Sets the html document to be opened as a popup when the user clicks on the toolbar action's icon.
+Sets the html document to be opened as a popup when the user clicks on the toolbar action's icon. The html needs to follow the Content Security Policy as outlined here:  https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Content_Security_Policy. For example, inline js (<input type="text" onclick="some_function()">  is no longer allowed.
 
 - ``details`` (object)
 
